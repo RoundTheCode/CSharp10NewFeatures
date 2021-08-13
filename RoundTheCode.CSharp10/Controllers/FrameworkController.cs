@@ -18,4 +18,13 @@ public class FrameworkController : Controller
 
         return Json(framework);
     }
+
+    [HttpGet("constant-interpolated-strings")]
+    public JsonResult ConstantInterpolatedStrings()
+    {
+        const string languageReleasePrefix = "C# 10";
+        const string languageRelease = $"{languageReleasePrefix} to be released in November 2021.";
+
+        return Json(languageRelease);
+    }
 }
