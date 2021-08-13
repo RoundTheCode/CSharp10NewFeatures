@@ -1,11 +1,10 @@
-﻿namespace RoundTheCode.CSharp10.Models
+﻿namespace RoundTheCode.CSharp10.Models;
+
+public class Framework
 {
-    public class Framework
-    {
-        public string? Name { get; set; }
+    public string? Name { get; set; }
 
-        public int Version { get; set; }
+    public int Version { get; set; }
 
-        public CodingLanguage? CodingLanguage { get; set; }
-    }
+    public CodingLanguage? CodingLanguage { get; set; }
 }

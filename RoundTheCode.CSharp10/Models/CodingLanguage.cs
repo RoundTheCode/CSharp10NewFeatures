@@ -1,7 +1,7 @@
-﻿namespace RoundTheCode.CSharp10.Models
+﻿namespace RoundTheCode.CSharp10.Models;
+
+public class CodingLanguage
 {
-    public class CodingLanguage
-    {
-        public string? Name { get; set; }
-    }
+    public string? Name { get; set; }
 }
+
