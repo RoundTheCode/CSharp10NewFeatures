@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using RoundTheCode.CSharp10.Models;
-
-namespace RoundTheCode.CSharp10.Controllers;
+﻿namespace RoundTheCode.CSharp10.Controllers;
 
 [Route("framework")]
 public class FrameworkController : Controller
