@@ -1,7 +1,3 @@
 ﻿namespace RoundTheCode.CSharp10.Models;
 
-public class CodingLanguage
-{
-    public string? Name { get; set; }
-}
-
+public readonly record struct CodingLanguage(string? Name);
