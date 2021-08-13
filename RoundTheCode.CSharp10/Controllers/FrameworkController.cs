@@ -27,4 +27,23 @@ public class FrameworkController : Controller
 
         return Json(languageRelease);
     }
+
+    [HttpGet("extended-property-patterns")]
+    public JsonResult ExtendedPropertyPatterns()
+    {
+        var framework = new Framework
+        {
+            Name = ".NET",
+            Version = 6,
+            CodingLanguage = new CodingLanguage { Name = "C#" }
+        };
+
+        return Json(GetFullCodingLanguageName(framework));
+    }
+
+    public static string GetFullCodingLanguageName(Framework framework) => framework switch
+    {
+        { CodingLanguage.Name: "C#" } => "C Sharp",
+        _ => "(unknown)"
+    };
 }
